@@ -1,114 +1,79 @@
 # Hi, I'm Raj Aryan 👋
 
-### AI/ML Engineer | AI Agents | RAG | LLM Applications
+### AI/ML Engineer | Agentic AI • RAG • LLM Applications • Computer Vision
 
-I build practical AI systems across **Agentic AI, RAG, Computer Vision, and intelligent automation**.
+I build practical AI systems that turn unstructured data and real-world inputs into useful, explainable workflows — from retrieval and document intelligence to computer vision, voice assistants, and full-stack ML applications.
 
-Currently exploring how AI agents and LLM-based systems can be turned into reliable, real-world applications.
-
----
-
-## 🚀 Featured Projects
-
-### 🧠 IS Copilot
-
-AI-powered recommendation engine for identifying applicable **Indian Standards** from procurement specifications.
-
-**Stack:** TypeScript • React • Node.js • AI/ML
-
-🔗 [Repository](https://github.com/rajaryan1111/indian-standards-procurement-ai)
+🎓 **B.Tech ECE** · 🤖 **AI/ML Engineering** · 📍 **Bengaluru, India**  
+💼 Open to **AI/ML engineering internships, research-oriented projects, and collaborations**
 
 ---
 
-### 🧪 H2S Exposure Dosimeter
+## 🚀 Selected Work
 
-Smart India Hackathon project combining a **colorimetric chemical dosimeter with AI-based quantitative image analysis** for H₂S exposure.
-
-**Stack:** Python • Computer Vision • AI • Hardware
-
-🔗 [Repository](https://github.com/rajaryan1111/SIH-H2S-Dosimeter)
-
----
-
-### 🔗 GraphOne Intelligence Pipeline
-
-An AI/data pipeline focused on processing, connecting, and transforming information into useful intelligence.
-
-**Stack:** Python • AI • Data Pipelines
-
-🔗 [Repository](https://github.com/rajaryan1111/graphone-intelligence-pipeline)
+| Project | What it demonstrates |
+|---|---|
+| 🧠 **[IS Copilot](https://github.com/rajaryan1111/indian-standards-procurement-ai)** | RAG, semantic retrieval, explainable ranking, evidence grounding, TypeScript/React |
+| 🧪 **[H₂S Exposure Dosimeter](https://github.com/rajaryan1111/SIH-H2S-Dosimeter)** | Computer vision, colour science, ML regression, FastAPI, dashboard engineering |
+| 🔗 **[GraphOne Intelligence Pipeline](https://github.com/rajaryan1111/graphone-intelligence-pipeline)** | Data pipelines, provenance, validation, failure accounting, Python, Docker |
+| 🤖 **[Jarvis — AI Voice Assistant](https://github.com/rajaryan1111/jarvis-assistant)** | Voice + vision, LLM integration, local computer automation, Python |
+| 🪪 **[Fake-ID Screening](https://github.com/rajaryan1111/fake-id-screening)** | OCR/CV workflows, FastAPI, mobile capture, validation and CI |
+| 📄 **[AI Resume Review](https://github.com/rajaryan1111/AI_resume_review)** | React, FastAPI, PostgreSQL, skill-gap analysis, interactive visualisation |
 
 ---
 
-### 🤖 Jarvis — AI Voice Assistant
+## 🧠 What I Build
 
-A voice and vision-based personal AI assistant designed to interact with the local computer and execute tasks through natural language.
-
-**Stack:** Python • OpenAI • Computer Vision • Speech AI
-
-🔗 [Repository](https://github.com/rajaryan1111/jarvis-assistant)
-
----
-
-### 🪪 Fake-ID Screening
-
-Mobile application for identity document screening and verification workflows.
-
-**Stack:** React Native • Computer Vision • AI
-
-🔗 [Repository](https://github.com/rajaryan1111/fake-id-screening)
-
----
-
-### 📄 AI Resume Review
-
-AI-powered platform for analyzing resumes against job descriptions and identifying relevant skills and gaps.
-
-**Stack:** React • FastAPI • PostgreSQL • AI/ML
-
-🔗 [Repository](https://github.com/rajaryan1111/AI_resume_review)
+- **Agentic AI & LLM systems** — tool use, workflows, RAG, embeddings, structured outputs
+- **Document intelligence** — extraction, retrieval, ranking, evidence and explainability
+- **Computer vision** — OCR, image analysis, colour analysis and camera-based workflows
+- **ML applications** — model-backed APIs, evaluation, regression/classification pipelines
+- **AI products** — React frontends + Python/Node backends + databases + deployment
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Languages
+**Languages**  
+Python · TypeScript · JavaScript · SQL
 
-`Python` `TypeScript` `JavaScript` `SQL`
+**AI / ML**  
+LLMs · RAG · AI Agents · LangChain · LangGraph · Embeddings · Vector Databases · Computer Vision
 
-### AI / ML
+**Backend & Data**  
+FastAPI · Node.js · PostgreSQL · SQLAlchemy
 
-`LLMs` `RAG` `AI Agents` `LangChain` `LangGraph` `Embeddings` `Vector Databases` `Computer Vision`
+**Frontend**  
+React · Vite · Tailwind CSS · React Flow · Recharts
 
-### Backend
-
-`FastAPI` `Node.js` `PostgreSQL`
-
-### Frontend
-
-`React` `Vite` `Tailwind CSS`
-
-### Tools & DevOps
-
-`Git` `GitHub` `Docker` `GitHub Actions`
+**Engineering & DevOps**  
+Git · GitHub Actions · Docker · Vercel
 
 ---
 
-## 🎓 About Me
+## 🔧 Engineering Focus
 
-- 🎓 B.Tech ECE student
-- 🤖 Focused on AI/ML Engineering
-- 🧠 Interested in Agentic AI, LLM applications, RAG, and Computer Vision
-- 🛠️ Building real-world AI projects and hackathon solutions
-- 🔬 Interested in developing practical AI systems
-- 📍 Bengaluru, India
+I care about more than making a demo work:
 
----
-
-## 🤝 Connect With Me
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Raj%20Aryan-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/raj-aryan-20aa32394/)
+- reproducible setup and clear project documentation
+- tests and CI that catch regressions
+- modular interfaces between AI providers and application code
+- transparent demo-data and model limitations
+- safe handling of credentials and user-provided data
+- explainable outputs instead of black-box recommendations
 
 ---
 
-### Building AI systems, one project at a time. 🚀
+## 📌 Current Focus
+
+Building deeper expertise in **Agentic AI, RAG systems, LLM application engineering, AI evaluation, and production-oriented ML workflows**.
+
+---
+
+## 🤝 Connect
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Raj%20Aryan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/raj-aryan-20aa32394/)
+
+[![GitHub](https://img.shields.io/badge/GitHub-rajaryan1111-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rajaryan1111)
+
+> **Building reliable AI systems, one project at a time.**
