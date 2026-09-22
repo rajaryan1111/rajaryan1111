@@ -11,6 +11,7 @@ Currently exploring how AI agents and LLM-based systems can be turned into relia
 ## 🚀 Featured Projects
 
 ### 🧠 IS Copilot
+
 AI-powered recommendation engine for identifying applicable **Indian Standards** from procurement specifications.
 
 **Stack:** TypeScript • React • Node.js • AI/ML
@@ -20,6 +21,7 @@ AI-powered recommendation engine for identifying applicable **Indian Standards**
 ---
 
 ### 🧪 H2S Exposure Dosimeter
+
 Smart India Hackathon project combining a **colorimetric chemical dosimeter with AI-based quantitative image analysis** for H₂S exposure.
 
 **Stack:** Python • Computer Vision • AI • Hardware
@@ -29,6 +31,7 @@ Smart India Hackathon project combining a **colorimetric chemical dosimeter with
 ---
 
 ### 🔗 GraphOne Intelligence Pipeline
+
 An AI/data pipeline focused on processing, connecting, and transforming information into useful intelligence.
 
 **Stack:** Python • AI • Data Pipelines
@@ -38,7 +41,8 @@ An AI/data pipeline focused on processing, connecting, and transforming informat
 ---
 
 ### 🤖 Jarvis — AI Voice Assistant
-A voice and vision-based personal AI assistant capable of interacting with the local computer and executing tasks through natural language.
+
+A voice and vision-based personal AI assistant designed to interact with the local computer and execute tasks through natural language.
 
 **Stack:** Python • OpenAI • Computer Vision • Speech AI
 
@@ -47,6 +51,7 @@ A voice and vision-based personal AI assistant capable of interacting with the l
 ---
 
 ### 🪪 Fake-ID Screening
+
 Mobile application for identity document screening and verification workflows.
 
 **Stack:** React Native • Computer Vision • AI
@@ -56,6 +61,7 @@ Mobile application for identity document screening and verification workflows.
 ---
 
 ### 📄 AI Resume Review
+
 AI-powered platform for analyzing resumes against job descriptions and identifying relevant skills and gaps.
 
 **Stack:** React • FastAPI • PostgreSQL • AI/ML
@@ -66,23 +72,23 @@ AI-powered platform for analyzing resumes against job descriptions and identifyi
 
 ## 🛠️ Tech Stack
 
-**Languages**
+### Languages
 
 `Python` `TypeScript` `JavaScript` `SQL`
 
-**AI / ML**
+### AI / ML
 
 `LLMs` `RAG` `AI Agents` `LangChain` `LangGraph` `Embeddings` `Vector Databases` `Computer Vision`
 
-**Backend**
+### Backend
 
 `FastAPI` `Node.js` `PostgreSQL`
 
-**Frontend**
+### Frontend
 
 `React` `Vite` `Tailwind CSS`
 
-**Tools & DevOps**
+### Tools & DevOps
 
 `Git` `GitHub` `Docker` `GitHub Actions`
 
@@ -92,15 +98,16 @@ AI-powered platform for analyzing resumes against job descriptions and identifyi
 
 - 🎓 B.Tech ECE student
 - 🤖 Focused on AI/ML Engineering
-- 🧠 Interested in Agentic AI, LLM applications and Computer Vision
+- 🧠 Interested in Agentic AI, LLM applications, RAG, and Computer Vision
 - 🛠️ Building real-world AI projects and hackathon solutions
+- 🔬 Interested in developing practical AI systems
 - 📍 Bengaluru, India
 
 ---
 
 ## 🤝 Connect With Me
 
-[LinkedIn](YOUR_LINKEDIN_URL)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Raj%20Aryan-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/raj-aryan-20aa32394/)
 
 ---
 
