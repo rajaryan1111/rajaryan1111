@@ -64,6 +64,15 @@ I care about more than making a demo work:
 
 ---
 
+## 📈 Recent Engineering Work
+
+- Added **end-to-end analysis pipeline tests** to IS Copilot, covering English and Hindi inputs, recommendation explainability, and result invariants.
+- Hardened Jarvis's **NewsAPI integration** by removing a hard-coded credential, adding environment-based configuration, request timeouts, and failure handling.
+- Added **unit coverage for API-key handling and network failures** in the Jarvis news integration.
+- Added a reusable **`.env.example` configuration template** so local setup does not require exposing secrets in source code.
+
+---
+
 ## 📌 Current Focus
 
 Building deeper expertise in **Agentic AI, RAG systems, LLM application engineering, AI evaluation, and production-oriented ML workflows**.
