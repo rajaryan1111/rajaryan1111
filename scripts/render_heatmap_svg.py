@@ -35,10 +35,14 @@ def main() -> None:
             f'<rect class="day" x="{x}" y="{y}" width="10" height="8" rx="2" '
             f'fill="{PALETTE[level]}" style="animation-delay:{delay:.3f}s"><title>{title}</title></rect>'
         )
-    total = int(payload.get("total_contributions", sum(int(d.get("count", 0)) for d in all_days)))
+    total = sum(int(d.get("count", 0)) for d in days)
     current = int(payload.get("current_streak", 0))
     longest = int(payload.get("longest_streak", 0))
     updated = escape(str(payload.get("updated_at", "unknown"))[:10])
+    best = payload.get("best_day", {})
+    best_label = escape(str(best.get("date", "unknown")) + " (" + str(int(best.get("count", 0))) + ")")
+    month_key = date.today().strftime("%Y-%m")
+    month_total = int(payload.get("monthly_totals", {}).get(month_key, 0))
     username = escape(str(payload.get("username", "GitHub user")))
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="170" viewBox="0 0 860 170" role="img" aria-labelledby="title desc">
 <title id="title">GitHub contribution calendar for {username}</title>
@@ -46,7 +50,7 @@ def main() -> None:
 <defs><style>.mono{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}}.day{{opacity:0;animation:reveal .45s ease-out both}}@keyframes reveal{{from{{opacity:0;transform:translateY(-5px)}}to{{opacity:1;transform:translateY(0)}}}}@media(prefers-reduced-motion:reduce){{.day{{animation:none;opacity:1}}}}</style></defs>
 <rect x="1" y="1" width="858" height="168" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
 <text x="18" y="24" fill="#7ee787" font-size="12" class="mono">$ git log --contributions --last-year</text>
-<text x="18" y="45" fill="#8b949e" font-size="10" class="mono">{total:,} contributions · streak {current}d · longest {longest}d · updated {updated}</text>
+<text x="18" y="45" fill="#8b949e" font-size="10" class="mono">{total:,} contributions · streak {current}d · longest {longest}d · best {best_label} · this month {month_total} · updated {updated}</text>
 {''.join(cells)}
 <text x="18" y="157" fill="#8b949e" font-size="10" class="mono">Less</text>
 {''.join(f'<rect x="{54+i*13}" y="149" width="10" height="8" rx="2" fill="{color}"/>' for i,color in enumerate(PALETTE))}
