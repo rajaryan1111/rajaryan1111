@@ -1,4 +1,4 @@
-name: Update animated profile contribution graph
+name: Update profile contribution heatmap
 
 on:
   schedule:
@@ -15,26 +15,26 @@ permissions:
   contents: write
 
 concurrency:
-  group: profile-art-refresh
+  group: profile-heatmap-refresh
   cancel-in-progress: false
 
 jobs:
-  refresh-heatmap:
+  heatmap:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Check out profile repository
-        uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Fetch public contribution calendar
+      - name: Install only daily-workflow dependencies
+        run: python -m pip install requests==2.32.3 beautifulsoup4==4.12.3
+      - name: Fetch real public contribution data
         run: python scripts/fetch_contributions.py
-      - name: Render animated SVG
+      - name: Render animated contribution SVG
         run: python scripts/render_heatmap_svg.py
       - name: Commit refreshed graph when changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: refresh animated contribution heatmap [skip ci]"
+          commit_message: "chore: refresh contribution graph [skip ci]"
           file_pattern: "data/contributions.json contrib-heatmap.svg"
