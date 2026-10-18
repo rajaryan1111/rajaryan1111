@@ -1,0 +1,40 @@
+name: Update animated profile contribution graph
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/fetch_contributions.py"
+      - "scripts/render_heatmap_svg.py"
+      - ".github/workflows/update-profile-art.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-art-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh-heatmap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Fetch public contribution calendar
+        run: python scripts/fetch_contributions.py
+      - name: Render animated SVG
+        run: python scripts/render_heatmap_svg.py
+      - name: Commit refreshed graph when changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh animated contribution heatmap [skip ci]"
+          file_pattern: "data/contributions.json contrib-heatmap.svg"
