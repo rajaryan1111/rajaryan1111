@@ -29,6 +29,8 @@ jobs:
           python-version: "3.11"
       - name: Install only daily-workflow dependencies
         run: python -m pip install requests==2.32.3 beautifulsoup4==4.12.3
+      - name: Compile profile scripts and tests
+        run: python -m compileall -q scripts tests
       - name: Test contribution parsing and streak calculations
         run: python -m unittest discover -s tests -p 'test_*.py'
       - name: Fetch real public contribution data
