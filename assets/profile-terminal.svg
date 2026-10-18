@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="260" viewBox="0 0 960 260" role="img" aria-labelledby="title desc">
+  <title id="title">Raj Aryan developer terminal card</title>
+  <desc id="desc">Terminal-style profile card highlighting AI and machine learning engineering, agentic AI, retrieval augmented generation, computer vision, and reliable engineering practices.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101820"/>
+      <stop offset="1" stop-color="#172a35"/>
+    </linearGradient>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .line { opacity: 0; animation: appear .55s ease-out forwards; }
+      .l1 { animation-delay: .2s; } .l2 { animation-delay: .65s; } .l3 { animation-delay: 1.1s; } .l4 { animation-delay: 1.55s; }
+      @keyframes appear { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+      @media (prefers-reduced-motion: reduce) { .line { animation: none; opacity: 1; } }
+    </style>
+  </defs>
+  <rect x="1" y="1" width="958" height="258" rx="14" fill="url(#bg)" stroke="#35505e" stroke-width="2"/>
+  <path d="M1 45 H959" stroke="#35505e"/>
+  <circle cx="25" cy="23" r="5" fill="#ff6b6b"/>
+  <circle cx="43" cy="23" r="5" fill="#ffd166"/>
+  <circle cx="61" cy="23" r="5" fill="#06d6a0"/>
+  <text x="84" y="28" fill="#a8bbc6" font-size="13" class="mono">rajaryan@github ~</text>
+  <text x="30" y="82" fill="#70e1b5" font-size="16" class="mono">$ whoami</text>
+  <text x="30" y="111" fill="#f2f6f8" font-size="24" font-weight="700" class="mono">Raj Aryan</text>
+  <text x="30" y="137" fill="#a8bbc6" font-size="15" class="mono">AI/ML Engineering · Agentic AI · RAG</text>
+  <text x="30" y="165" fill="#70e1b5" font-size="16" class="mono">$ focus --now</text>
+  <g class="mono" font-size="14" fill="#d9e5ea">
+    <text x="30" y="191" class="line l1">→ Explainable retrieval and LLM applications</text>
+    <text x="30" y="214" class="line l2">→ Computer vision and practical ML systems</text>
+    <text x="30" y="237" class="line l3">→ Testing, safe defaults, reproducible engineering</text>
+  </g>
+  <text x="922" y="237" text-anchor="end" fill="#70e1b5" font-size="13" class="mono line l4">READY_</text>
+</svg>

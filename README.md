@@ -11,6 +11,10 @@ I build practical AI systems that connect retrieval, intelligent workflows, comp
 
 [Portfolio](https://github.com/rajaryan1111/raj-aryan-portfolio) · [LinkedIn](https://www.linkedin.com/in/raj-aryan-20aa32394/) · [GitHub](https://github.com/rajaryan1111)
 
+<p align="center">
+  <img src="./assets/profile-terminal.svg" alt="Animated terminal-style developer profile card" width="100%" />
+</p>
+
 ---
 
 ## Featured projects
