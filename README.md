@@ -1,88 +1,63 @@
-# Hi, I'm Raj Aryan 👋
+# Raj Aryan
 
-### AI/ML Engineer | Agentic AI • RAG • LLM Applications • Computer Vision
+### AI/ML Engineering · Agentic AI · RAG · LLM Applications · Computer Vision
 
-I build practical AI systems that turn unstructured data and real-world inputs into useful, explainable workflows — from retrieval and document intelligence to computer vision, voice assistants, and full-stack ML applications.
+I build practical AI systems that connect retrieval, intelligent workflows, computer vision, and software engineering to solve real problems. My focus is on making AI applications explainable, testable, and usable—not just producing demos.
 
-🎓 **B.Tech ECE** · 🤖 **AI/ML Engineering** · 📍 **Bengaluru, India**  
-💼 Open to **AI/ML engineering internships, research-oriented projects, and collaborations**
+- 🎓 B.Tech in Electronics and Communication Engineering
+- 📍 Bengaluru, India
+- 🎯 Focus: AI/ML engineering, agentic workflows, RAG, and LLM application engineering
+- 💼 Open to AI/ML engineering internships, research-oriented projects, and collaborations
 
----
-
-## 🚀 Selected Work
-
-| Project | What it demonstrates |
-|---|---|
-| 🧠 **[IS Copilot](https://github.com/rajaryan1111/indian-standards-procurement-ai)** | RAG, semantic retrieval, explainable ranking, evidence grounding, TypeScript/React |
-| 🧪 **[H₂S Exposure Dosimeter](https://github.com/rajaryan1111/SIH-H2S-Dosimeter)** | Computer vision, colour science, ML regression, FastAPI, dashboard engineering |
-| 🔗 **[GraphOne Intelligence Pipeline](https://github.com/rajaryan1111/graphone-intelligence-pipeline)** | Data pipelines, provenance, validation, failure accounting, Python, Docker |
-| 🤖 **[Jarvis — AI Voice Assistant](https://github.com/rajaryan1111/jarvis-assistant)** | Voice + vision, LLM integration, local computer automation, Python |
-| 🪪 **[Fake-ID Screening](https://github.com/rajaryan1111/fake-id-screening)** | OCR/CV workflows, FastAPI, mobile capture, validation and CI |
-| 📄 **[AI Resume Review](https://github.com/rajaryan1111/AI_resume_review)** | React, FastAPI, PostgreSQL, skill-gap analysis, interactive visualisation |
+[Portfolio](https://github.com/rajaryan1111/raj-aryan-portfolio) · [LinkedIn](https://www.linkedin.com/in/raj-aryan-20aa32394/) · [GitHub](https://github.com/rajaryan1111)
 
 ---
 
-## 🧠 What I Build
+## Featured projects
 
-- **Agentic AI & LLM systems** — tool use, workflows, RAG, embeddings, structured outputs
-- **Document intelligence** — extraction, retrieval, ranking, evidence and explainability
-- **Computer vision** — OCR, image analysis, colour analysis and camera-based workflows
-- **ML applications** — model-backed APIs, evaluation, regression/classification pipelines
-- **AI products** — React frontends + Python/Node backends + databases + deployment
+| Project | What it does | Evidence / status |
+|---|---|---|
+| **[IS Copilot](https://github.com/rajaryan1111/indian-standards-procurement-ai)** | AI-assisted discovery of potentially applicable Indian Standards, with semantic retrieval, explainable recommendations, evidence, relationship expansion, and specification-gap analysis. | [Live demo](https://indian-standards-procurement-ai.vercel.app/) · React, TypeScript · README documents 53 passing tests |
+| **[Jarvis / ULTRON](https://github.com/rajaryan1111/jarvis-assistant)** | macOS-focused voice assistant with LLM tools, local knowledge retrieval, optional vision, and computer automation with confirmation boundaries. | Python · modular optional dependencies · tests and CI |
+| **[H₂S Exposure Dosimeter](https://github.com/rajaryan1111/SIH-H2S-Dosimeter)** | Hackathon project exploring a colorimetric H₂S exposure-dosimeter workflow with AI-assisted quantitative reading. | Hardware-adjacent ML / computer-vision project |
+| **[AI Resume Review](https://github.com/rajaryan1111/AI_resume_review)** | Full-stack resume-review application focused on resume analysis and skill-gap feedback. | React · FastAPI · PostgreSQL (see repository for current implementation) |
+| **[GraphOne Intelligence Pipeline](https://github.com/rajaryan1111/graphone-intelligence-pipeline)** | Data-intelligence pipeline focused on provenance, validation, and explicit failure accounting. | Python · Docker (active development; default branch is `phase-8-repair`) |
+| **[Fake-ID Screening](https://github.com/rajaryan1111/fake-id-screening)** | Prototype for document-image screening with OCR/image-analysis components, API validation, and a mobile capture workflow. | FastAPI · PostgreSQL/Supabase · human review required; not authoritative identity verification |
 
----
+### In progress
 
-## 🛠️ Tech Stack
-
-**Languages**  
-Python · TypeScript · JavaScript · SQL
-
-**AI / ML**  
-LLMs · RAG · AI Agents · LangChain · LangGraph · Embeddings · Vector Databases · Computer Vision
-
-**Backend & Data**  
-FastAPI · Node.js · PostgreSQL · SQLAlchemy
-
-**Frontend**  
-React · Vite · Tailwind CSS · React Flow · Recharts
-
-**Engineering & DevOps**  
-Git · GitHub Actions · Docker · Vercel
+**[AI Career Agent](https://github.com/rajaryan1111/ai-career-agent)** — a local-first desktop alpha for manual job entry, conservative eligibility checks, explainable skill overlap, shortlisting, and application tracking. The current version does **not** perform live job discovery, resume parsing, form filling, or application submission. See the repository README for the current acceptance criteria and limitations.
 
 ---
 
-## 🔧 Engineering Focus
+## Technical toolkit
 
-I care about more than making a demo work:
+- **Languages:** Python, TypeScript, JavaScript, SQL
+- **AI / ML:** LLM applications, RAG, embeddings, AI-agent workflows, computer vision, OCR
+- **Backend / data:** FastAPI, Node.js, PostgreSQL, SQLAlchemy
+- **Frontend:** React, Vite, Tailwind CSS, React Flow, Recharts
+- **Engineering:** Git, GitHub Actions, Docker, testing, deployment
 
-- reproducible setup and clear project documentation
-- tests and CI that catch regressions
-- modular interfaces between AI providers and application code
-- transparent demo-data and model limitations
-- safe handling of credentials and user-provided data
-- explainable outputs instead of black-box recommendations
+I list tools here as areas I work with—not as a claim of equal proficiency across every technology.
+
+## Engineering principles
+
+- **Evidence over unsupported claims:** connect AI recommendations to sources and make uncertainty visible.
+- **Tests over guesswork:** add regression coverage for meaningful behavior and failure cases.
+- **Safe defaults:** keep credentials out of source control and gate sensitive computer actions.
+- **Reproducibility:** document setup, configuration, and how to run tests.
+- **Honest project status:** distinguish implemented functionality from planned work and prototypes.
+
+## Recent engineering focus
+
+- Strengthening IS Copilot's analysis pipeline tests, including English/Hindi inputs, explainability, and result invariants.
+- Hardening Jarvis integrations with environment-based configuration, request timeouts, and failure handling.
+- Improving local-first workflows and explicit eligibility states in AI Career Agent.
+
+## Current learning focus
+
+Agentic AI, RAG evaluation, LLM application engineering, retrieval quality, and production-oriented ML workflows.
 
 ---
 
-## 📈 Recent Engineering Work
-
-- Added **end-to-end analysis pipeline tests** to IS Copilot, covering English and Hindi inputs, recommendation explainability, and result invariants.
-- Hardened Jarvis's **NewsAPI integration** by removing a hard-coded credential, adding environment-based configuration, request timeouts, and failure handling.
-- Added **unit coverage for API-key handling and network failures** in the Jarvis news integration.
-- Added a reusable **`.env.example` configuration template** so local setup does not require exposing secrets in source code.
-
----
-
-## 📌 Current Focus
-
-Building deeper expertise in **Agentic AI, RAG systems, LLM application engineering, AI evaluation, and production-oriented ML workflows**.
-
----
-
-## 🤝 Connect
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Raj%20Aryan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/raj-aryan-20aa32394/)
-
-[![GitHub](https://img.shields.io/badge/GitHub-rajaryan1111-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rajaryan1111)
-
-> **Building reliable AI systems, one project at a time.**
+*Building reliable AI systems, one measurable improvement at a time.*
