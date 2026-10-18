@@ -88,7 +88,7 @@ def main() -> None:
     for item in days:
         monthly[str(item["date"])[:7]] += int(item["count"])
     best = max(days, key=lambda item: int(item["count"]))
-    total = sum(int(item["count"]) for item in days)
+    total = sum(int(item["count"]) for item in days[-365:])
     payload = {
         "username": USERNAME,
         "source": URL,
