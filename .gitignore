@@ -1,0 +1,5 @@
+# Generated locally by the animated profile portrait pipeline
+data/source-prepped.png
+.venv/
+__pycache__/
+*.py[cod]

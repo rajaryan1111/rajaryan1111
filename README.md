@@ -2,18 +2,16 @@
 
 <div align="center">
 
-### `rajaryan@github ~ $ ./contributions.sh`
+<h3><code>rajaryan@github ~ $ ./contributions.sh</code></h3>
+<img src="./contrib-heatmap.svg" width="860" alt="Animated GitHub contribution calendar generated from public contribution data" />
 
-<img src="./contrib-heatmap.svg" alt="Animated GitHub contribution heatmap, refreshed daily from public GitHub contribution data" width="860" />
+<br><br>
 
-<br/>
-
-### `rajaryan@github ~ $ whoami`
-
+<h3><code>rajaryan@github ~ $ whoami</code></h3>
 <table>
   <tr>
-    <td valign="top" width="42%"><img src="./assets/avi-ascii.svg" alt="Self-revealing monochrome ASCII identity art" width="100%" /></td>
-    <td valign="top" width="58%"><img src="./assets/info-card.svg" alt="Animated Neofetch-style developer information card" width="100%" /></td>
+    <td valign="top"><img src="./assets/avi-ascii.svg" width="370" alt="Animated monochrome ASCII portrait generated from the GitHub profile avatar" /></td>
+    <td valign="top"><img src="./assets/info-card.svg" width="490" alt="Animated Neofetch-style profile information card" /></td>
   </tr>
 </table>
 
@@ -21,7 +19,7 @@
 
 ---
 
-### `rajaryan@github ~ $ cat ./featured-projects.md`
+<h3><code>rajaryan@github ~ $ cat ./featured-projects.md</code></h3>
 
 ## 🚀 Featured Projects
 
@@ -42,7 +40,7 @@ AI-assisted discovery of potentially applicable Indian Standards, semantic retri
 ### 🤖 [Jarvis / ULTRON — AI Voice Assistant](https://github.com/rajaryan1111/jarvis-assistant)
 A macOS-focused voice assistant exploring LLM tools, local knowledge retrieval, optional vision, and computer automation with confirmation boundaries.
 
-**Stack:** `Python` · `LLM Tools` · `Voice` · `Computer Vision`
+**Stack:** `Python` · `LLM tools` · `Voice` · `Computer vision`
 
 ### 🦺 [H₂S Exposure Dosimeter](https://github.com/rajaryan1111/SIH-H2S-Dosimeter)
 Hackathon project exploring a colorimetric hydrogen-sulfide exposure-dosimeter workflow with AI-assisted quantitative reading.
@@ -55,7 +53,7 @@ Document-image screening prototype with OCR/image-analysis components, API valid
 
 ---
 
-### `rajaryan@github ~ $ neofetch`
+<h3><code>rajaryan@github ~ $ neofetch</code></h3>
 
 - 🎓 B.Tech — Electronics and Communication Engineering
 - 🧠 Focus: AI/ML, agentic workflows, RAG, LLM applications, and computer vision
@@ -65,8 +63,8 @@ Document-image screening prototype with OCR/image-analysis components, API valid
 
 ---
 
-### `rajaryan@github ~ $ ./profile-status.sh`
+<h3><code>rajaryan@github ~ $ ./profile-status.sh</code></h3>
 
 **Build philosophy:** useful features, evidence-backed outputs, tests, safe defaults, and honest project status.
 
-*Contribution heatmap updates daily through GitHub Actions. The animations are self-contained SVGs; no JavaScript or third-party stats widget is used.*
+*The portrait and info card animate once and freeze. The contribution heatmap is generated from GitHub's public contribution calendar and refreshed daily by GitHub Actions. All animation lives inside committed SVGs; no JavaScript or third-party stats service is used.*

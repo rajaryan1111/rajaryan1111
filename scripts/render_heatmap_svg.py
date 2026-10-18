@@ -1,48 +1,60 @@
 #!/usr/bin/env python3
-"""Render the fetched GitHub contribution calendar as a self-animating SVG."""
+"""Render GitHub's public contribution data as a self-animating SVG."""
 from __future__ import annotations
 
 import json
 from datetime import date
+from html import escape
 from pathlib import Path
-from xml.sax.saxutils import escape
 
 DATA = Path("data/contributions.json")
 OUT = Path("contrib-heatmap.svg")
-PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
+PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353", "#69f0a0"]
 
 
 def main() -> None:
     payload = json.loads(DATA.read_text(encoding="utf-8"))
-    days = payload.get("days", [])
-    if len(days) < 300:
+    all_days = payload.get("days", [])
+    if len(all_days) < 350:
         raise RuntimeError("Contribution data is incomplete; refusing to render a misleading heatmap.")
-    # Align the oldest date to its weekday, then render one column per calendar week.
+    # GitHub's calendar is a rolling year; trim to the latest 365 days.
+    days = all_days[-365:]
     first = date.fromisoformat(days[0]["date"])
-    start_offset = (first.weekday() + 1) % 7  # Sunday-first, matching GitHub
-    cells = []
+    offset = (first.weekday() + 1) % 7  # Sunday-first, as on GitHub
+    cells: list[str] = []
     for index, item in enumerate(days):
         day = date.fromisoformat(item["date"])
-        slot = index + start_offset
+        slot = index + offset
         col, row = slot // 7, slot % 7
-        level = max(0, min(4, int(item.get("level", 0))))
-        x, y = 18 + col * 15, 58 + row * 12
-        delay = min(4.5, col * 0.045 + row * 0.06)
-        title = f'{item["date"]}: {int(item.get("count", 0))} contributions'
-        cells.append(f'<rect class="day" x="{x}" y="{y}" width="10" height="8" rx="2" fill="{PALETTE[level]}" style="animation-delay:{delay:.3f}s"><title>{escape(title)}</title></rect>')
-    total = int(payload.get("total_contributions", sum(int(d.get("count", 0)) for d in days)))
+        level = max(0, min(5, int(item.get("level", 0))))
+        x, y = 18 + col * 15, 62 + row * 12
+        delay = min(5.0, col * 0.035 + row * 0.055)
+        count = int(item.get("count", 0))
+        title = escape(f'{day.isoformat()}: {count} contribution{"s" if count != 1 else ""}')
+        cells.append(
+            f'<rect class="day" x="{x}" y="{y}" width="10" height="8" rx="2" '
+            f'fill="{PALETTE[level]}" style="animation-delay:{delay:.3f}s"><title>{title}</title></rect>'
+        )
+    total = sum(int(d.get("count", 0)) for d in days)
+    current = int(payload.get("current_streak", 0))
+    longest = int(payload.get("longest_streak", 0))
     updated = escape(str(payload.get("updated_at", "unknown"))[:10])
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="155" viewBox="0 0 860 155" role="img" aria-labelledby="title desc">
-<title id="title">GitHub contribution calendar for {escape(payload.get("username", "GitHub user"))}</title>
-<desc id="desc">A 53-week contribution grid generated from public GitHub contribution data. {total} contributions reported by the source calendar.</desc>
-<defs><style>.mono{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}}.day{{animation:reveal .5s ease-out both}}@keyframes reveal{{from{{opacity:0;transform:translateY(-5px)}}to{{opacity:1;transform:translateY(0)}}}}@media(prefers-reduced-motion:reduce){{.day{{animation:none}}}}</style></defs>
-<rect x="1" y="1" width="858" height="153" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+    best = payload.get("best_day", {})
+    best_label = escape(str(best.get("date", "unknown")) + " (" + str(int(best.get("count", 0))) + ")")
+    month_key = date.today().strftime("%Y-%m")
+    month_total = int(payload.get("monthly_totals", {}).get(month_key, 0))
+    username = escape(str(payload.get("username", "GitHub user")))
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="170" viewBox="0 0 860 170" role="img" aria-labelledby="title desc">
+<title id="title">GitHub contribution calendar for {username}</title>
+<desc id="desc">A 53-week contribution grid generated from GitHub's public contribution calendar. {total} contributions reported for the available calendar.</desc>
+<defs><style>.mono{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}}.day{{opacity:0;animation:reveal .45s ease-out both}}@keyframes reveal{{from{{opacity:0;transform:translateY(-5px)}}to{{opacity:1;transform:translateY(0)}}}}@media(prefers-reduced-motion:reduce){{.day{{animation:none;opacity:1}}}}</style></defs>
+<rect x="1" y="1" width="858" height="168" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
 <text x="18" y="24" fill="#7ee787" font-size="12" class="mono">$ git log --contributions --last-year</text>
-<text x="18" y="46" fill="#8b949e" font-size="10" class="mono">{total:,} contributions · source: github.com/users/{escape(payload.get("username", ""))}/contributions · updated {updated}</text>
+<text x="18" y="45" fill="#8b949e" font-size="10" class="mono">{total:,} contributions · streak {current}d · longest {longest}d · best {best_label} · this month {month_total} · updated {updated}</text>
 {''.join(cells)}
-<text x="18" y="145" fill="#8b949e" font-size="10" class="mono">Less</text>
-{''.join(f'<rect x="{54+i*13}" y="137" width="10" height="8" rx="2" fill="{color}"/>' for i,color in enumerate(PALETTE))}
-<text x="123" y="145" fill="#8b949e" font-size="10" class="mono">More</text>
+<text x="18" y="157" fill="#8b949e" font-size="10" class="mono">Less</text>
+{''.join(f'<rect x="{54+i*13}" y="149" width="10" height="8" rx="2" fill="{color}"/>' for i,color in enumerate(PALETTE))}
+<text x="137" y="157" fill="#8b949e" font-size="10" class="mono">More</text>
 </svg>
 '''
     OUT.write_text(svg, encoding="utf-8")
