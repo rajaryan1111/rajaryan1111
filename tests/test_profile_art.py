@@ -4,6 +4,7 @@ import unittest
 from bs4 import BeautifulSoup
 
 from scripts.fetch_contributions import parse_count, streaks
+from scripts.render_heatmap_svg import counts_are_available
 
 
 class ContributionParsingTests(unittest.TestCase):
@@ -40,6 +41,12 @@ class ContributionParsingTests(unittest.TestCase):
             {"date": today.isoformat(), "count": 1},
         ]
         self.assertEqual(streaks(days), (2, 2))
+
+    def test_unknown_cached_counts_are_not_treated_as_zero(self):
+        self.assertFalse(counts_are_available([{"date": "2026-10-18", "level": 4, "count": None}]))
+
+    def test_verified_integer_counts_are_available(self):
+        self.assertTrue(counts_are_available([{"date": "2026-10-18", "level": 4, "count": 12}]))
 
 
 if __name__ == "__main__":
