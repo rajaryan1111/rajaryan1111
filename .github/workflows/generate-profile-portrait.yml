@@ -37,6 +37,8 @@ jobs:
         run: python scripts/make_ascii_svg.py
       - name: Generate animated Neofetch info card
         run: python scripts/make_info_card.py
+      - name: Verify generated outputs replaced placeholders
+        run: grep -q 'clipPath id="row0"' assets/avi-ascii.svg && grep -q 'AI Career Agent' assets/info-card.svg
       - name: Commit generated SVGs
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
