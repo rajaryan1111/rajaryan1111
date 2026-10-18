@@ -9,7 +9,6 @@ on:
     paths:
       - "scripts/fetch_contributions.py"
       - "scripts/render_heatmap_svg.py"
-      - "contrib-heatmap.svg"
       - ".github/workflows/update-profile-art.yml"
 
 permissions:
