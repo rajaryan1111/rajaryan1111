@@ -1,87 +1,72 @@
-# Hi, I'm Raj Aryan 👋
+# Raj Aryan
 
-### AI/ML Engineer | AI Agents | RAG | LLM Applications
+<div align="center">
 
-I'm a B.Tech Electronics and Communication Engineering student interested in building practical AI systems, intelligent agents, and applications powered by LLMs. I enjoy taking ideas from prototype to usable software—with a focus on useful features, reliable behavior, and clear documentation.
+### `rajaryan@github ~ $ ./contributions.sh`
 
-- 🔭 Currently building: **AI Career Agent** and **Jarvis / ULTRON**
-- 🌱 Learning: **Agentic AI, RAG, LLM engineering, and AI/ML**
-- 💼 Interested in: **AI/ML internships, open-source projects, and collaborations**
-- 📍 Bengaluru, India
-- 🔗 [LinkedIn](https://www.linkedin.com/in/raj-aryan-20aa32394/) · [Portfolio](https://github.com/rajaryan1111/raj-aryan-portfolio)
+<img src="./contrib-heatmap.svg" alt="Animated GitHub contribution heatmap, refreshed daily from public GitHub contribution data" width="860" />
+
+<br/>
+
+### `rajaryan@github ~ $ whoami`
+
+<table>
+  <tr>
+    <td valign="top" width="42%"><img src="./assets/avi-ascii.svg" alt="Self-revealing monochrome ASCII identity art" width="100%" /></td>
+    <td valign="top" width="58%"><img src="./assets/info-card.svg" alt="Animated Neofetch-style developer information card" width="100%" /></td>
+  </tr>
+</table>
+
+</div>
 
 ---
+
+### `rajaryan@github ~ $ cat ./featured-projects.md`
 
 ## 🚀 Featured Projects
 
 ### 🥇 [AI Career Agent](https://github.com/rajaryan1111/ai-career-agent)
-A local-first desktop app to organize job opportunities and make job-search decisions more structured and explainable.
+A local-first desktop application for structured job tracking and explainable career decisions.
 
 - Manual job entry and application tracking
-- Conservative eligibility checks with explicit status
-- Explainable skill-overlap feedback and shortlisting
-- **Status:** Active development — desktop alpha. Live job discovery, automated resume parsing, form filling, and application submission are not implemented yet.
+- Conservative eligibility checks and explainable skill overlap
+- **Status:** Active desktop alpha. Live job discovery, automated resume parsing, form filling, and application submission are not implemented yet.
 
-**Tech:** `Python` · `Desktop UI` · `SQLite` · `Testing`
+**Stack:** `Python` · `SQLite` · `Desktop UI` · `Testing`
 
 ### 🧠 [IS Copilot — Indian Standards & Procurement AI](https://github.com/rajaryan1111/indian-standards-procurement-ai)
-An AI-assisted tool for finding potentially applicable Indian Standards, exploring relationships, and producing explainable recommendations with supporting evidence.
+AI-assisted discovery of potentially applicable Indian Standards, semantic retrieval, evidence-backed recommendations, and specification-gap analysis.
 
-- Semantic retrieval and evidence-backed results
-- Relationship exploration and specification-gap analysis
-- [Live demo](https://indian-standards-procurement-ai.vercel.app/)
-
-**Tech:** `React` · `TypeScript` · `AI/RAG`
+**Stack:** `React` · `TypeScript` · [Live demo](https://indian-standards-procurement-ai.vercel.app/)
 
 ### 🤖 [Jarvis / ULTRON — AI Voice Assistant](https://github.com/rajaryan1111/jarvis-assistant)
-A macOS-focused voice-assistant project exploring LLM-powered tools, local knowledge retrieval, optional vision, and computer automation with confirmation boundaries.
+A macOS-focused voice assistant exploring LLM tools, local knowledge retrieval, optional vision, and computer automation with confirmation boundaries.
 
-**Tech:** `Python` · `LLM Tools` · `Voice` · `Computer Vision`
+**Stack:** `Python` · `LLM Tools` · `Voice` · `Computer Vision`
 
 ### 🦺 [H₂S Exposure Dosimeter](https://github.com/rajaryan1111/SIH-H2S-Dosimeter)
-A hackathon project exploring a colorimetric hydrogen-sulfide exposure-dosimeter workflow with AI-assisted quantitative reading.
-
-**Focus:** `Computer Vision` · `Applied ML` · `Hardware-adjacent AI`
+Hackathon project exploring a colorimetric hydrogen-sulfide exposure-dosimeter workflow with AI-assisted quantitative reading.
 
 ### 🔗 [GraphOne Intelligence Pipeline](https://github.com/rajaryan1111/graphone-intelligence-pipeline)
-A data-intelligence pipeline focused on data provenance, validation, and explicit failure accounting.
-
-**Tech:** `Python` · `Docker` · `Data Pipelines`
+Data-intelligence pipeline focused on provenance, validation, and explicit failure accounting.
 
 ### 🪪 [Fake-ID Screening](https://github.com/rajaryan1111/fake-id-screening)
-A prototype for document-image screening with OCR/image-analysis components, API validation, and a mobile capture workflow. It supports screening and human review; it is not authoritative identity verification.
-
-**Tech:** `Python` · `FastAPI` · `OCR` · `PostgreSQL/Supabase`
+Document-image screening prototype with OCR/image-analysis components, API validation, and a mobile capture workflow. Human review is required; it is not authoritative identity verification.
 
 ---
 
-## 🛠️ Tech Stack
+### `rajaryan@github ~ $ neofetch`
 
-**Languages**
-  
-`Python` `JavaScript` `TypeScript` `SQL`
-
-**AI / Machine Learning**
-  
-`LLM Applications` `RAG` `Embeddings` `AI Agents` `Computer Vision` `OCR`
-
-**Backend & Data**
-  
-`FastAPI` `Node.js` `PostgreSQL` `SQLAlchemy`
-
-**Frontend & Tools**
-  
-`React` `Vite` `Tailwind CSS` `Git` `GitHub Actions` `Docker`
+- 🎓 B.Tech — Electronics and Communication Engineering
+- 🧠 Focus: AI/ML, agentic workflows, RAG, LLM applications, and computer vision
+- 🛠️ Languages & tools: Python, TypeScript, JavaScript, SQL, React, FastAPI, PostgreSQL, Docker
+- 💼 Interested in AI/ML internships, open-source projects, and collaborations
+- 🔗 [LinkedIn](https://www.linkedin.com/in/raj-aryan-20aa32394/) · [Portfolio](https://github.com/rajaryan1111/raj-aryan-portfolio)
 
 ---
 
-## 🎯 About Me
+### `rajaryan@github ~ $ ./profile-status.sh`
 
-- 🎓 B.Tech student in Electronics and Communication Engineering
-- 🧩 Interested in combining AI research with real-world software engineering
-- 🧪 Value testing, reproducibility, safe defaults, and evidence-backed outputs
-- 🚀 Working toward building dependable AI products—not just demos
+**Build philosophy:** useful features, evidence-backed outputs, tests, safe defaults, and honest project status.
 
----
-
-*Building AI systems, one project at a time. 🚀*
+*Contribution heatmap updates daily through GitHub Actions. The animations are self-contained SVGs; no JavaScript or third-party stats widget is used.*
