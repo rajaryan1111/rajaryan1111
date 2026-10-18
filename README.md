@@ -10,7 +10,7 @@
 <h3><code>rajaryan@github ~ $ whoami</code></h3>
 <table>
   <tr>
-    <td valign="top"><img src="./assets/avi-ascii.svg" width="370" alt="Animated monochrome ASCII portrait generated from the GitHub profile avatar" /></td>
+    <td valign="top"><img src="./assets/avi-ascii.svg" width="370" alt="Animated ASCII portrait; the portrait workflow generates it from the public GitHub avatar" /></td>
     <td valign="top"><img src="./assets/info-card.svg" width="490" alt="Animated Neofetch-style profile information card" /></td>
   </tr>
 </table>
@@ -67,4 +67,4 @@ Document-image screening prototype with OCR/image-analysis components, API valid
 
 **Build philosophy:** useful features, evidence-backed outputs, tests, safe defaults, and honest project status.
 
-*The portrait and info card animate once and freeze. The contribution heatmap is generated from GitHub's public contribution calendar and refreshed daily by GitHub Actions. All animation lives inside committed SVGs; no JavaScript or third-party stats service is used.*
+*The portrait workflow generates the ASCII portrait from the public GitHub avatar, and the info card animates once before freezing. The contribution workflow is scheduled daily to fetch GitHub's public contribution calendar and refresh the heatmap. The latest committed heatmap currently shows activity levels while contribution counts are being refreshed; do not treat its cached count totals as verified. All animation lives inside committed SVGs; no JavaScript or third-party stats service is used.*
