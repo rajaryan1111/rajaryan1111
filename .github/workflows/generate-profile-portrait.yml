@@ -1,0 +1,42 @@
+name: Generate animated profile portrait and info card
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/prep_photo.py"
+      - "scripts/make_ascii_svg.py"
+      - "scripts/make_info_card.py"
+      - "scripts/requirements.txt"
+      - ".github/workflows/generate-profile-portrait.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-portrait-refresh
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install portrait dependencies
+        run: python -m pip install --upgrade pip && python -m pip install -r scripts/requirements.txt
+      - name: Prepare public GitHub avatar
+        run: python scripts/prep_photo.py
+      - name: Generate animated ASCII portrait
+        run: python scripts/make_ascii_svg.py
+      - name: Generate animated Neofetch info card
+        run: python scripts/make_info_card.py
+      - name: Commit generated SVGs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: generate animated profile art [skip ci]"
+          file_pattern: "assets/avi-ascii.svg assets/info-card.svg"
